@@ -3,10 +3,16 @@ import TodoList from "./components/TodoList"
 
 function App() {
 
+  let todos = [
+    'Go to the gym',
+    'Complete this project',
+    'Eat more veggies and proteins'
+  ]
+
   return (
     <>
       <TodoInput/>
-      <TodoList/>
+      <TodoList todos={todos}/>
     </>
   )
 }
